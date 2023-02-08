@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff7f0;
+}
+
+.logo {
+  width: 48px;
+}
+
+.btn {
+  border: none;
+  border-radius: 28px;
+  color: #fff7f0;
+  font-size: 0.875rem;
+  font-weight: 700;
+  height: 44px;
+  width: 176px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: #030303;
+}
+
+.btn--primary:hover {
+  background-color: #755cde;
+}
+
+.btn--secondary {
+  background-color: #eb7565;
+}
+
+.btn--secondary:hover {
+  background-color: #f6a560;
+}
+
+@media only screen and (min-width: 768px) {
+  .logo {
+    width: 64px;
+  }
+
+  .btn {
+    height: 56px;
+    width: 228px;
+  }
+}
