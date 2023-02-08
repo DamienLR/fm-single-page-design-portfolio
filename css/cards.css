@@ -1,0 +1,85 @@
+.cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "card-1 card-1"
+    "card-2 card-3"
+    "card-4 card-4"
+    "card-5 card-5"
+    "card-6 card-6";
+  margin: 2rem 1rem 0;
+}
+
+.card {
+  background-color: grey;
+  border-radius: 8px;
+  color: #fff;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__img {
+  align-self: flex-end;
+}
+
+.card__header {
+  font-size: 1.5rem;
+  margin-top: 40px;
+}
+
+.card__header--first {
+  margin-top: 94px;
+}
+
+.card-1 {
+  background-color: #755cde;
+  grid-area: card-1;
+}
+
+.card-2 {
+  background-color: #f6a560;
+  grid-area: card-2;
+}
+
+.card-3 {
+  background-color: #f39e9e;
+  grid-area: card-3;
+}
+
+.card-4 {
+  background-color: #eb7565;
+  grid-area: card-4;
+}
+
+.card-5 {
+  background-color: #61c4b7;
+  grid-area: card-5;
+}
+
+.card-6 {
+  background-color: #552049;
+  grid-area: card-6;
+}
+
+@media only screen and (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "card-1 card-1 card-2 card-3"
+      "card-1 card-1 card-4 card-4"
+      "card-5 card-5 card-6 card-6";
+    margin: 4rem 39px 0;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .cards {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "card-1 card-1 card-2 card-3 card-5 card-5"
+      "card-1 card-1 card-4 card-4 card-6 card-6";
+    margin: 5rem 165px 0;
+  }
+}
